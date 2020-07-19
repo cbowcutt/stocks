@@ -1,4 +1,6 @@
 FROM node:current-alpine3.12
 WORKDIR /usr/src/app
 COPY ./ ./
-CMD npm install
+RUN yarn add sqlite3
+RUN yarn install
+

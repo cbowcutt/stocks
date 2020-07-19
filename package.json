@@ -8,15 +8,13 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.15.3",
     "request": "^2.81.0",
     "body-parser": "^1.19.0",
     "sqlite3": "^4.1.0",
     "gulp": "^4.0.2",
-    "gulp-browserify": "0.5.1"
-  },
-  "dependencies": {
+    "gulp-browserify": "0.5.1",
     "pug": "^2.0.0-rc.2"
   }
 }
