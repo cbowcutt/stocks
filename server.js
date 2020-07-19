@@ -10,4 +10,4 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
 require('./app/routes/ticksRoute')(app);
 require('./app/routes/stocksRoute')(app);
-server.listen(3001, 'localhost');
+server.listen(process.env.STOCKS_PORT, process.env.STOCKS_DOMAIN);
