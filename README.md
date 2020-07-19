@@ -21,7 +21,7 @@ In Windows
 
 ```
   setx ALPHAVANTAGE_KEY=<your alphavantage key>
-  setx PORT=<port>
+  setx STOCKS_PORT=<port>
   setx STOCKS_DOMAIN=<ip or valid host>
 ```
 
