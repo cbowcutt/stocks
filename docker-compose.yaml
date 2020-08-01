@@ -1,0 +1,14 @@
+version: '2.0'
+services:
+  stocks:
+    build: .
+    image: stocks
+    ports:
+    - "${STOCKS_PORT}:${STOCKS_PORT}"
+    command: |
+      sh -c "node server.js"
+    environment:
+    - STOCKS_PORT=${STOCKS_PORT}
+    - ALPHAVANTAGE_KEY=${ALPHAVANTAGE_KEY}
+    - STOCKS_DOMAIN=${STOCKS_DOMAIN}
+    network_mode: "host"
